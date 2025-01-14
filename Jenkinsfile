@@ -11,7 +11,7 @@ pipeline{
     stages{
         stage("Build Main"){
             when{
-                 buildingTag()
+                 tag "2.0"
             }
             steps{
                echo "Deploying to production"
